@@ -1,0 +1,42 @@
+<div class="images-list">
+  <mat-grid-list cols="4" gutterSize="5px" rowHeight="520px">
+    <mat-grid-tile *ngFor="let photo of photos">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{ photo }}</mat-card-title>
+          <mat-card-subtitle>{{ photo }}</mat-card-subtitle>
+          <span class="example-spacer"></span>
+          <mat-icon class="example-icon">favorite</mat-icon>
+          <mat-icon class="example-icon">edit</mat-icon>
+          <mat-icon class="example-icon">delete</mat-icon>
+        </mat-card-header>
+        <img src="../../../assets/photos/{{ photo }}.jpg" />
+        <mat-card-content>
+          <p>
+            {{ photo }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Meeeeeeeeeeeeeeeee</mat-card-title>
+          <mat-card-subtitle>Omri</mat-card-subtitle>
+          <span class="example-spacer"></span>
+          <mat-icon class="example-icon">favorite</mat-icon>
+          <mat-icon class="example-icon">edit</mat-icon>
+          <mat-icon class="example-icon">delete</mat-icon>
+        </mat-card-header>
+        <img src="../../../assets/photos/profile pictures/omri.jpg" />
+        <mat-card-content>
+          <p>
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </p>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
